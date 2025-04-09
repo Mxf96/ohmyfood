@@ -6,10 +6,11 @@ header {
 
 .header-logo {
   padding: 20px 0 10px;
-}
-.header-logo img {
-  height: 28px;
-  object-fit: contain;
+
+  img {
+    height: 28px;
+    object-fit: contain;
+  }
 }
 
 .location {
@@ -22,13 +23,15 @@ header {
   align-items: center;
   gap: 10px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-}
-.location i {
-  color: #353535;
-}
-.location span {
-  font-size: 16px;
-  font-weight: 500;
+
+  i {
+    color: #353535;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+  }
 }
 
 .header-menu {
@@ -47,9 +50,10 @@ header {
   color: #353535;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-.go-back:hover {
-  color: #cb68db;
+
+  &:hover {
+    color: #cb68db;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -57,5 +61,3 @@ header {
     box-shadow: none;
   }
 }
-
-/*# sourceMappingURL=header.css.map */
