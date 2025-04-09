@@ -30,7 +30,7 @@
 }
 .menu-container .menu-content .favorite-icon {
   position: absolute;
-  top: 25px;
+  top: 26px;
   right: 40px;
   color: #787878;
   font-size: 30px;
@@ -165,7 +165,7 @@
     margin: 0 680px 15px 0;
   }
   .menu-container .menu-content .favorite-icon {
-    top: 105px;
+    top: 102px;
     right: 280px;
   }
   .menu-container .order-button-container .order-button {
@@ -188,5 +188,3 @@
     margin: 0 975px 15px 0;
   }
 }
-
-/*# sourceMappingURL=menu_page.css.map */
