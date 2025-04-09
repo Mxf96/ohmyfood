@@ -72,6 +72,15 @@
   padding: 0 0 10px;
 }
 
+.header-menu .header-logo img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header-menu .header-logo img:hover {
+  transform: scale(1.2);
+  filter: invert(23%) sepia(100%) saturate(1000%) hue-rotate(262deg);
+}
+
 .go-back {
   position: absolute;
   top: 25px;

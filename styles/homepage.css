@@ -221,14 +221,16 @@
   }
 }
 @media (min-width: 1440px) {
-  h2 {
-    margin-left: 120px;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
+
   .steps-list {
     flex-direction: row;
     justify-content: flex-start;
     gap: 30px;
-    margin-left: 125px;
   }
   .steps-list li {
     width: 25%;
@@ -237,6 +239,5 @@
     display: grid;
     grid-template-columns: repeat(2, 550px);
     gap: 50px;
-    margin-left: 120px;
   }
 }
