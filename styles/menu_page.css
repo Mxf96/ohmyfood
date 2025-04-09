@@ -62,34 +62,77 @@
 .dish-card {
   background: #fff;
   border-radius: 16px;
-  padding: 16px;
+
   margin-bottom: 12px;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .dish-info {
   flex: 1;
-  padding-right: 8px;
   min-width: 0;
+  padding-right: 8px;
+}
+
+.dish-name,
+.dish-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dish-name {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+  padding: 16px 0 0 16px;
 }
 
 .dish-desc {
   font-size: 13px;
   color: #777;
   margin: 4px 0 0;
+  padding: 0 0 16px 16px;
 }
 
 .dish-price {
   font-weight: bold;
   white-space: nowrap;
-  flex-shrink: 0; /* ne rétrécit jamais */
+  flex-shrink: 0;
+  transition: margin-right 0.4s ease;
+}
+
+.dish-hover-box {
+  width: 0;
+  height: 80px;
+  background: #99e2d0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-left: 10px;
+  transition: width 0.4s ease;
+}
+
+.checkmark {
+  color: white;
+  font-size: 20px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dish-card:hover .dish-hover-box {
+  width: 60px;
+}
+
+.dish-card:hover .checkmark {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .order-button-container {
@@ -108,11 +151,12 @@
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .order-button:hover {
   transform: scale(1.05);
+  background: linear-gradient(180deg, #ff79d9d4, #9256dcd2);
 }
 
 @media (min-width: 1024px) {
@@ -128,7 +172,7 @@
     margin: -50px auto -50px auto;
     border-radius: 24px;
     padding: 100px 100px 20px 100px;
-    width: 70%; /* ou 80%, à ajuster selon ton goût */
+    width: 70%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 10;

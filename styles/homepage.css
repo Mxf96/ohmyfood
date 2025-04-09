@@ -216,7 +216,6 @@
 }
 
 @media (min-width: 1024px) {
-  /* Ajuster la section des étapes */
   .steps-list {
     flex-direction: row;
     justify-content: flex-start;
@@ -228,7 +227,6 @@
     width: 25%;
   }
 
-  /* Modifier la section des restaurants */
   .restaurant-list {
     display: grid;
     grid-template-columns: repeat(2, 400px);
