@@ -2,6 +2,7 @@
   background: #f6f6f6;
   padding: 40px 20px;
   text-align: center;
+  animation: fadeIn 0.8s ease-out forwards;
 }
 .hero h2 {
   font-size: 24px;
@@ -36,6 +37,7 @@
 .steps {
   padding: 40px 20px;
   background: white;
+  animation: fadeIn 0.8s ease-out forwards;
 }
 .steps h2 {
   font-size: 24px;
@@ -86,7 +88,8 @@
   width: 20px;
   height: 20px;
   object-fit: contain;
-  filter: grayscale(100%) invert(41%) sepia(10%) saturate(1000%) hue-rotate(180deg) brightness(85%) contrast(95%);
+  filter: grayscale(100%) invert(41%) sepia(10%) saturate(1000%)
+    hue-rotate(180deg) brightness(85%) contrast(95%);
 }
 .steps .step-content p {
   font-weight: 500;
@@ -97,6 +100,7 @@
 .restaurants {
   padding: 40px 20px;
   background: #f6f6f6;
+  animation: fadeIn 0.8s ease-out forwards;
 }
 .restaurants h2 {
   font-size: 24px;
@@ -185,33 +189,6 @@
   font-weight: 900;
 }
 
-@media (min-width: 1024px) {
-  .steps-list {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 30px;
-    margin-left: 50px;
-  }
-  .steps-list li {
-    width: 25%;
-  }
-  .restaurant-list {
-    display: grid;
-    grid-template-columns: repeat(2, 475px);
-    gap: 30px;
-  }
-  .restaurant-item {
-    text-align: left;
-  }
-  .restaurant-info {
-    align-items: flex-start;
-    text-align: left;
-  }
-  .favorite-icon {
-    top: 15px;
-    right: 15px;
-  }
-}
 @media (min-width: 1440px) {
   .container {
     max-width: 1200px;
