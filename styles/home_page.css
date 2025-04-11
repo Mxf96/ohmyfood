@@ -189,6 +189,73 @@
   font-weight: 900;
 }
 
+@media (min-width: 376px) and (max-width: 767px) {
+  .container {
+    width: 380px;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .hero .container h2 {
+    font-size: 28px;
+  }
+  .steps h2,
+  .restaurants h2 {
+    margin: 0 0 30px 20px;
+  }
+  .steps .steps-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 0 0 0 20px;
+  }
+  .steps li {
+    width: 175px;
+  }
+  .restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    gap: 30px;
+    margin: 0 0 0 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .hero .container h2 {
+    font-size: 32px;
+  }
+  .steps h2,
+  .restaurants h2 {
+    margin: 0 0 30px 30px;
+  }
+  .steps .steps-list {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+    margin: 0 0 0 30px;
+  }
+  .steps li {
+    width: 300px;
+  }
+  .restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    gap: 40px;
+    margin: 0 0 0 30px;
+  }
+}
+
 @media (min-width: 1440px) {
   .container {
     max-width: 1200px;
@@ -209,7 +276,7 @@
     margin: 0 0 0 50px;
   }
   .steps li {
-    width: 22%;
+    width: 23%;
   }
   .restaurant-list {
     display: grid;
