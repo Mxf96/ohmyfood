@@ -16,6 +16,7 @@
   margin-bottom: 25px;
   padding: 5px;
 }
+
 .hero-btn {
   display: inline-block;
   background: linear-gradient(180deg, #ff79da, #9356dc);
@@ -26,7 +27,7 @@
   font-weight: 500;
   font-size: 16px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  transition: opacity 0.3s ease;
+  transition: opacity 0.8s ease;
 }
 .hero-btn:hover {
   opacity: 0.8;
@@ -40,27 +41,26 @@
   font-size: 24px;
   margin-bottom: 20px;
 }
-.steps-list {
+.steps .steps-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-left: 0;
 }
-.steps-list li {
+.steps .steps-list li {
   display: flex;
   align-items: center;
   background: #f6f6f6;
   border-radius: 20px;
   padding: 25px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
   position: relative;
 }
-.steps-list li:hover .step-content img {
+.steps .steps-list li:hover .step-content img {
   filter: invert(23%) sepia(90%) saturate(1000%) hue-rotate(262deg);
 }
-
-.step-number {
+.steps .step-number {
   position: absolute;
   left: -10px;
   top: 50%;
@@ -70,27 +70,25 @@
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
 }
-
-.step-content {
+.steps .step-content {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-left: 20px;
 }
-.step-content img {
+.steps .step-content img {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  filter: grayscale(100%) invert(41%) sepia(10%) saturate(1000%)
-    hue-rotate(180deg) brightness(85%) contrast(95%);
+  filter: grayscale(100%) invert(41%) sepia(10%) saturate(1000%) hue-rotate(180deg) brightness(85%) contrast(95%);
 }
-.step-content p {
+.steps .step-content p {
   font-weight: 500;
   color: #000;
   font-size: 16px;
@@ -105,13 +103,12 @@
   margin-bottom: 20px;
   color: #000;
 }
-.restaurants-list {
+.restaurants .restaurants-list {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-
-.restaurant-item {
+.restaurants .restaurant-item {
   display: flex;
   flex-direction: column;
   background: white;
@@ -122,31 +119,29 @@
   margin-bottom: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.restaurant-item:hover {
+.restaurants .restaurant-item:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.restaurant-item a {
+.restaurants .restaurant-item a {
   text-decoration: none;
   color: inherit;
   display: block;
   width: 100%;
   height: 100%;
 }
-.restaurant-item img {
+.restaurants .restaurant-item img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-
-.image-container {
+.restaurants .image-container {
   position: relative;
   width: 100%;
 }
-
-.tag {
+.restaurants .image-container .tag {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -157,26 +152,24 @@
   font-size: 14px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.restaurant-info {
+.restaurants .restaurant-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 15px 20px;
   position: relative;
 }
-.restaurant-info h3 {
+.restaurants .restaurant-info h3 {
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 5px;
 }
-.restaurant-info p {
+.restaurants .restaurant-info p {
   margin: 0;
   font-size: 17px;
   font-weight: 300;
 }
-
-.favorite-icon {
+.restaurants .restaurant-info .favorite-icon {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -185,7 +178,7 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-.favorite-icon:hover {
+.restaurants .restaurant-info .favorite-icon:hover {
   color: #cb68db;
   content: "\f004";
   font-family: "Font Awesome 6 Free";
@@ -204,9 +197,8 @@
   }
   .restaurant-list {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, 475px);
     gap: 30px;
-    margin-left: 75px;
   }
   .restaurant-item {
     text-align: left;
@@ -226,18 +218,27 @@
     margin: 0 auto;
     padding: 0 20px;
   }
-
-  .steps-list {
+  .hero .container h2 {
+    font-size: 40px;
+  }
+  .steps h2,
+  .restaurants h2 {
+    margin: 0 0 30px 50px;
+  }
+  .steps .steps-list {
     flex-direction: row;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 60px;
   }
-  .steps-list li {
-    width: 25%;
+  .steps li {
+    width: 22%;
   }
   .restaurant-list {
     display: grid;
-    grid-template-columns: repeat(2, 550px);
+    grid-template-columns: repeat(2, 500px);
     gap: 50px;
+    margin: 0 0 0 50px;
   }
 }
+
+/*# sourceMappingURL=home_page.css.map */
