@@ -166,6 +166,12 @@
   opacity: 0.8;
 }
 
+@media (min-width: 320px) and (max-width: 375px) {
+  .menu-container .menu-content .favorite-icon {
+    right: 20px;
+  }
+}
+
 @media (min-width: 376px) and (max-width: 767px) {
   .menu-container .menu-content {
     width: 380px;
