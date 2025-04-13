@@ -207,13 +207,15 @@
   }
   .steps h2,
   .restaurants h2 {
-    margin: 0 0 30px 20px;
+    margin: 0 0 30px 40px;
   }
   .steps .steps-list {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+
     gap: 15px;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 1%;
   }
   .steps li {
     width: 175px;
@@ -221,8 +223,9 @@
   .restaurant-list {
     display: grid;
     grid-template-columns: repeat(2, 320px);
+    justify-content: center;
+    margin: 0 auto;
     gap: 30px;
-    margin: 0 0 0 20px;
   }
 }
 
@@ -242,8 +245,9 @@
   .steps .steps-list {
     flex-direction: row;
     justify-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
     gap: 25px;
-    margin: 0 0 0 30px;
   }
   .steps li {
     width: 235px;
@@ -251,8 +255,9 @@
   .restaurant-list {
     display: grid;
     grid-template-columns: repeat(2, 425px);
+    justify-content: center;
+    margin: 0 auto;
     gap: 40px;
-    margin: 0 0 0 30px;
   }
 }
 
@@ -272,8 +277,9 @@
   .steps .steps-list {
     flex-direction: row;
     justify-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
     gap: 60px;
-    margin: 0 0 0 50px;
   }
   .steps li {
     width: 23%;
@@ -281,7 +287,8 @@
   .restaurant-list {
     display: grid;
     grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    margin: 0 auto;
     gap: 50px;
-    margin: 0 0 0 50px;
   }
 }
