@@ -170,6 +170,9 @@
   .menu-container .menu-content .favorite-icon {
     right: 20px;
   }
+  .menu-container .menu-content .menu-subtitle {
+    margin: 25px 235px 20px 0;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 767px) {
