@@ -14,7 +14,7 @@ header {
   object-fit: contain;
 }
 
-.location {
+header .location {
   position: relative;
   background: #eaeaea;
   width: 100%;
