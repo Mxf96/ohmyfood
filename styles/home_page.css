@@ -2,7 +2,7 @@
   background: #f6f6f6;
   padding: 40px 20px;
   text-align: center;
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.3s ease-out forwards;
 }
 .hero h2 {
   font-size: 24px;
@@ -37,7 +37,7 @@
 .steps {
   padding: 40px 20px;
   background: white;
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.3s ease-out forwards;
 }
 .steps h2 {
   font-size: 24px;
@@ -100,7 +100,7 @@
 .restaurants {
   padding: 40px 20px;
   background: #f6f6f6;
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.3s ease-out forwards;
 }
 .restaurants h2 {
   font-size: 24px;

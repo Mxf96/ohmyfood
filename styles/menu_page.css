@@ -3,7 +3,7 @@
   background: white;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.3s ease-out forwards;
 }
 
 .menu-container .menu-image img {
