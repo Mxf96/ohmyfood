@@ -62,6 +62,8 @@
   border-bottom: 3px solid #99e2d0;
 }
 
+/* ------------------------------------------------------ */
+
 .menu-container .menu-content .dish-card {
   background: #fff;
   border-radius: 16px;
@@ -166,7 +168,7 @@
   opacity: 0.8;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 374px) {
   .menu-container .menu-content .favorite-icon {
     right: 20px;
   }
@@ -210,7 +212,7 @@
     right: 180px;
   }
   .menu-container .menu-content .menu-subtitle {
-    margin: 35px 460px 0 0;
+    margin: 35px 455px 0 0;
   }
   .menu-container .menu-content .dish-card {
     width: 500px;
@@ -279,7 +281,7 @@
     right: 360px;
   }
   .menu-container .menu-content .menu-subtitle {
-    margin: 35px 685px 0 140px;
+    margin: 35px 665px 0 140px;
   }
   .menu-container .menu-content .dish-card {
     display: flex;

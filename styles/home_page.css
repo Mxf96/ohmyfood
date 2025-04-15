@@ -2,7 +2,7 @@
   background: #f6f6f6;
   padding: 40px 20px;
   text-align: center;
-  animation: fadeIn 0.3s ease-out forwards;
+  animation: fadeIn 0.3s ease-out 1s forwards;
 }
 .hero h2 {
   font-size: 24px;
@@ -34,10 +34,12 @@
   opacity: 0.8;
 }
 
+/* ------------------------------------------------------ */
+
 .steps {
   padding: 40px 20px;
   background: white;
-  animation: fadeIn 0.3s ease-out forwards;
+  animation: fadeIn 0.3s ease-out 1s forwards;
 }
 .steps h2 {
   font-size: 24px;
@@ -97,10 +99,12 @@
   font-size: 16px;
 }
 
+/* ------------------------------------------------------ */
+
 .restaurants {
   padding: 40px 20px;
   background: #f6f6f6;
-  animation: fadeIn 0.3s ease-out forwards;
+  animation: fadeIn 0.3s ease-out 1s forwards;
 }
 .restaurants h2 {
   font-size: 24px;

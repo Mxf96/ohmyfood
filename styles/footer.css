@@ -2,7 +2,7 @@
   background: #333;
   color: white;
   padding: 20px 30px;
-  animation: fadeIn 0.3s ease-out forwards;
+  animation: fadeIn 0.3s ease-out 1s forwards;
 }
 
 .footer .footer-logo {

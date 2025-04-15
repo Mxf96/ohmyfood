@@ -1,5 +1,5 @@
 header {
-  animation: fadeIn 0.3s ease-out forwards;
+  animation: fadeIn 0.3s ease-out 1s forwards;
 }
 
 .header-logo {
