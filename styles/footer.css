@@ -1,10 +1,12 @@
+/* --------- Footer --------- */
 .footer {
   background: #333;
   color: white;
   padding: 20px 30px;
   animation: fadeIn 0.3s ease-out 1s forwards;
+  /* Logo */
+  /* Menu */
 }
-
 .footer .footer-logo {
   margin-bottom: 20px;
 }
@@ -31,6 +33,7 @@
   color: #ff79da;
 }
 
+/* --------- Media Queries --------- */
 @media (min-width: 1024px) {
   .footer {
     flex-direction: row;
@@ -39,17 +42,11 @@
     text-align: left;
     padding: 50px;
   }
-  .footer .footer-logo img {
-    float: right;
-  }
   .footer .footer-logo {
     margin-bottom: 0;
   }
-  .footer .footer-menu li {
-    margin: 0;
-  }
-  .footer .footer-menu a {
-    justify-content: flex-start;
+  .footer .footer-logo img {
+    float: right;
   }
   .footer .footer-menu {
     display: flex;
@@ -59,4 +56,12 @@
     margin-right: 50px;
     gap: 40px;
   }
+  .footer .footer-menu li {
+    margin: 0;
+  }
+  .footer .footer-menu a {
+    justify-content: flex-start;
+  }
 }
+
+/*# sourceMappingURL=footer.css.map */

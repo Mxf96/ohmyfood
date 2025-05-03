@@ -1,0 +1,100 @@
+/* ---------- Header ---------- */
+header {
+  animation: fadeIn 0.3s ease-out 1s forwards;
+
+  /* Bloc localisation à l’intérieur du header */
+  .location {
+    position: relative;
+    background: #eaeaea;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    animation: fadeInUp 0.3s ease-out forwards;
+  }
+}
+
+/* ---------- Logo ---------- */
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 10px;
+
+  img {
+    height: 28px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+/* ---------- Icônes / Texte localisation ---------- */
+.location {
+  i,
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  i {
+    color: #353535;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* ---------- Menu d’en-tête ---------- */
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 0 10px;
+
+  .header-logo {
+    img {
+      transition: transform 0.3s ease, filter 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        filter: invert(23%) sepia(100%) saturate(1000%) hue-rotate(262deg);
+      }
+    }
+  }
+}
+
+/* ---------- Bouton retour ---------- */
+.go-back {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  font-size: 25px;
+  color: #353535;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #cb68db;
+  }
+}
+
+/* ---------- Media query ---------- */
+@media (min-width: 1440px) {
+  .header-logo {
+    img {
+      height: 40px;
+    }
+  }
+
+  .location {
+    box-shadow: none;
+  }
+}
