@@ -176,10 +176,12 @@
 
 /* =================== MEDIA QUERIES =================== */
 
-/* --- 320 px → 375 px --- */
-@media (min-width: 320px) and (max-width: 375px) {
+/* --- 320 px → 374 px --- */
+@media (min-width: 320px) and (max-width: 374px) {
   .menu-container {
     .menu-content {
+      width: 280px;
+
       .favorite-icon {
         right: 20px;
       }
@@ -190,14 +192,14 @@
   }
 }
 
-/* --- 376 px → 500 px --- */
+/* --- 376 px → 767 px --- */
 @media (min-width: 376px) and (max-width: 500px) {
   .menu-container {
     .menu-content {
-      width: 380px;
+      width: 350px;
 
       .menu-subtitle {
-        margin: 30px 335px 10px 0;
+        margin: 30px 305px 10px 0;
       }
     }
   }
@@ -207,10 +209,10 @@
 @media (min-width: 501px) and (max-width: 767px) {
   .menu-container {
     .menu-content {
-      width: 450px;
+      width: 400px;
 
       .menu-subtitle {
-        margin: 30px 405px 10px 0;
+        margin: 30px 355px 10px 0;
       }
     }
   }
@@ -323,7 +325,7 @@
       }
       .favorite-icon {
         top: 52px;
-        right: 360px;
+        right: 350px;
       }
       .menu-subtitle {
         margin: 35px 665px 0 140px;
